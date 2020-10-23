@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey!</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1 id="title">Quality Survey</h1>
+  </header>
+  <main>
+  <p id="description">Welcome to our survey. Please consider giving us feedback, (this reaches our director!).</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label>
+    <input class="text-field" id="name" type="text" maxlength="60" placeholder="Name" required/>
+    <label id="email-label" for="name">Email:</label>
+    <input class="text-field" id="email" type="email" placeholder="Email" required/>
+    <label id="number-label" for="name">Age:</label>
+    <input id="number"class="text-field" id="number" type="number" min="13" max="200" placeholder="Age">
+    <label id="service-label" for="service-dropdown">Service Received: </label>
+    <select class="text-field" id="dropdown">
+      <option value="Development">Development</option>
+      <option value="Hosting">Hosting</option>
+      <option value="Hardware">Hardware</option>
+      <option value="Customer-Care">Customer Care</option>
+    </select>
+    <div>
+      <input id="radio1" type="radio" name="gender" value="Female"/>
+      <label class="radio-label" for="radio1">Female</label>
+    </div>
+    <div>
+      <input id="radio2" type="radio" name="gender" value="Male"/>
+      <label class="radio-label" for="radio2">Male</label>
+    </div>
+    <p> Who Would you recommend us to?</p>
+    <input class="checkbox" id="checkbox1" type="checkbox" value="Friends" name="Friends"/>
+    <label class="checkbox-label"for="checkbox1" >Friends</label>
+    <input class="checkbox" id="checkbox2" type="checkbox" value="Family" name="Family"/>
+    <label class="checkbox-label" for="checkbox1" >Family</label>
+    <input class="checkbox" id="checkbox3" type="checkbox" value="Parents" name="Parents"/>
+    <label class="checkbox-label" for="checkbox1" >Parents</label>
+    <input class="checkbox" id="checkbox4" type="checkbox" value="Colleagues" name="Colleagues"/>
+    <label class="checkbox-label" for="checkbox4" value="Colleagues">Colleagues</label>
+  <textarea id="comment" maxlength="180" rows="4" placeholder="Comments"></textarea>
+    <button id="submit">Submit</button>
+  </form>
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>

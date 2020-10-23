@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+  font-family: sans-serif, monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template:
+  '. .';
+  background-color: white;
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px black;
+}
+
+form p {
+  grid-column: 1/3;
+  justify-self: center;
+}
+form button {
+  padding: 5px;
+  grid-column: 1/3;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px black
+}
+
+label {
+  padding-top: 10px;
+}
+
+
+.text-field {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px black;
+  padding: 5px;
+  margin: 5px 0;
+  justify-self: end;
+}
+
+.checkbox {
+  justify-self: end;
+}
+
+.checkbox-label {
+  padding: 3px;
+  justify-self: start;
+}
+
+#title {
+  text-align: center;
+} 
+#number {
+  width: 5ch;
+}
+
+#dropdown {
+  -webkit-appearance: none;
+}
+
+#comment {
+  grid-column: 1/3;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
