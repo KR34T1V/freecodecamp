@@ -10,6 +10,14 @@ nav ul {
   padding: 0;
 }
 
+nav li:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0px 0px 20px;
+          box-shadow: 0px 0px 20px;
+  opacity: 0.8;
+}
+
 nav li {
   display: inline;
 }
@@ -22,9 +30,41 @@ nav a {
 }
 
 body {
-  text-align: center;
   background-color: #2e2929;
   color: white;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.product-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+}
+
+.card {
+  display: block;
+  background-color: #e79115;
+  color: #e79115;
+  margin: 15px;
+  padding: 5px;
+  border: 1px solid #e79115;
+}
+
+.card img {
+  max-height: 200px;
+}
+
+.card:hover {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: 0px 0px 20px;
+          box-shadow: 0px 0px 20px;
+  opacity: 0.3;
 }
 
 .video-centre {
@@ -33,5 +73,22 @@ body {
   margin-right: auto;
   -webkit-box-shadow: 3px 3px 5px #e79115;
           box-shadow: 3px 3px 5px #e79115;
+}
+
+.responsive {
+  float: left;
+  width: 33%;
+}
+
+@media screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .responsive {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
