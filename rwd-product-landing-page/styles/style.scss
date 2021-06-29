@@ -1,0 +1,40 @@
+$primary: #e79115;
+$secondary: #2e2929;
+$text: white;
+
+#header-img {
+  max-width: 8%;
+  height: auto;
+  background-color: $primary;
+}
+
+nav {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    padding: 8px;
+    background-color: $primary;
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+body {
+  text-align: center;
+  background-color: $secondary;
+  color: $text;
+}
+
+.video-centre {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 3px 3px 5px $primary;
+}
