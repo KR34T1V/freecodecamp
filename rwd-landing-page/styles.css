@@ -1,0 +1,85 @@
+#header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  height: 60px;
+  top: 0;
+  left: 0;
+  background-color: cadetblue;
+  z-index: 1000;
+}
+
+#header #header-img {
+  margin: auto 5px auto 50px;
+  border-radius: 50%;
+  background-color: white;
+  height: 90%;
+}
+
+#header #nav-bar {
+  width: 100%;
+  margin: auto 5px auto 0px;
+  text-align: right;
+}
+
+#header #nav-bar .nav-link {
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  margin: 3px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: purple ;
+}
+
+#header + * {
+  padding-top: 80px;
+}
+
+body .body-wrapper {
+  margin: 10px 0px 10px 0px;
+  color: lightslategray;
+}
+
+#video {
+  display: block;
+  margin: 50px auto 25px auto;
+  border-radius: 15px;
+  width: 80%;
+}
+#form {
+  margin: auto;
+  text-align: center;
+}
+
+#lorem2 {
+  font-size: small;
+}
+@media only screen and (min-width: 600px) {
+  body .body-wrapper {
+    margin: 0px 10% 0px 10%;
+  }
+}
+@media only screen and (min-width: 768px) {
+#header #nav-bar .nav-link {
+  font-size: medium;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 5px;
+  font-weight: bold;
+}
+  body .body-wrapper {
+    margin: 0px 20% 0px 20%;
+  }
+  #video {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1200px) {
+  #video {
+    width: 80%;
+  }
+}
